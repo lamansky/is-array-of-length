@@ -22,6 +22,8 @@
     "node": ">=6"
   },
   "dependencies": {
+    "arrify": "^1.0.1",
+    "is-instance-of": "^1.0.2",
     "sbo": "^1.1.0"
   },
   "devDependencies": {

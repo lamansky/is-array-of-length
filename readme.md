@@ -17,11 +17,13 @@ The module exports a single function.
 ### Parameters
 
 1. `arr` (any): What may or may not be an array
-2. `len` (integer): The desired length of the array
+2. `lengths` (integer or array): One or more integers, each of which represents an acceptable number of items in the array.
+3. Optional: Object argument:
+    * `arrays` (class, string, or array): One or more classes or names of classes that should be treated as equivalent to `Array`.
 
 ### Return Values
 
-* `true` if `arr` is an array with a length of `len`
+* `true` if `arr` is an array with a length given in `lengths`
 * `false` otherwise
 
 ## Example
@@ -31,6 +33,7 @@ const isArrayOfLength = require('is-array-of-length')
 
 isArrayOfLength(['a', 'b'], 2) // true
 isArrayOfLength(['a', 'b'], 3) // false
+isArrayOfLength(['a', 'b'], [2, 3]) // true
 isArrayOfLength('7 chars', 7) // false
 
 // Supports the bind operator
