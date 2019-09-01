@@ -5,19 +5,19 @@ const isArrayOfLength = require('.')
 
 describe('isArrayOfLength()', function () {
   it('should return true for an array of the specified length', function () {
-    assert(isArrayOfLength(['a', 'b'], 2))
+    assert.strictEqual(isArrayOfLength(['a', 'b'], 2), true)
   })
 
   it('should return false for an array of some other length', function () {
-    assert(!isArrayOfLength(['a', 'b'], 3))
+    assert.strictEqual(isArrayOfLength(['a', 'b'], 3), false)
   })
 
   it('should return false for a string of the specified length', function () {
-    assert(!isArrayOfLength('7 chars', 7))
+    assert.strictEqual(isArrayOfLength('7 chars', 7), false)
   })
 
   it('should support the bind operator', function () {
-    assert(isArrayOfLength.call(['a', 'b'], 2))
-    assert(!isArrayOfLength.call(['a', 'b'], 3))
+    assert.strictEqual(isArrayOfLength.call(['a', 'b'], 2), true)
+    assert.strictEqual(isArrayOfLength.call(['a', 'b'], 3), false)
   })
 })
