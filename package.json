@@ -9,7 +9,10 @@
     "length",
     "bind operator"
   ],
-  "author": "John Lamansky",
+  "author": {
+    "name": "Fr. John Lamansky",
+    "url": "lamansky.com"
+  },
   "license": "MIT",
   "homepage": "https://github.com/lamansky/is-array-of-length",
   "repository": "lamansky/is-array-of-length",
