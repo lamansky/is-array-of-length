@@ -19,14 +19,14 @@
   "main": "index.js",
   "files": [],
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=6"
   },
   "dependencies": {
-    "sbo": "^1.0.0"
+    "sbo": "^1.1.0"
   },
   "devDependencies": {
-    "eslint-config-lamansky": "^1.0.0",
-    "mocha": "^5.0.0"
+    "eslint-config-lamansky": "^2.0.0",
+    "mocha": "^6.2.0"
   },
   "scripts": {
     "test": "mocha"
